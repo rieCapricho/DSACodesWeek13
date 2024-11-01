@@ -1,0 +1,29 @@
+public class TestMaxHeap {
+    public static void main(String[] args){
+        MaxHeap heap=new MaxHeap(6);
+
+        System.out.println("By: Abrienne Capricho");
+        System.out.println("Count\t\t: "+heap.heapCount());
+        System.out.println("Empry\t\t: "+heap.isEmpty());
+        System.out.println("Capacty\t\t: "+heap.getCapacity());
+        System.out.println("Peak\t\t: "+heap.peek());
+
+        System.out.println("Parent of 10\t: "+heap.parent(10));
+        System.out.println("Parent of 7\t: "+heap.parent(7));
+
+        System.out.println("Right Child of 10\t: "+heap.rightChild(10));
+        System.out.println("Right Child of 7\t: "+heap.rightChild(7));
+
+        System.out.println("Left Child of 10\t: "+heap.leftChild(10));
+        System.out.println("Left Child of 7 \t: "+heap.leftChild(7));
+
+        System.out.println("Left Children\t: "+heap.leftChildren());
+        System.out.println("Right Children\t: "+heap.rightChildren());
+        System.out.println("Parents\t\t: "+heap.parents());
+
+        System.out.println("Leaves\t\t: "+heap.leaves());
+        System.out.println("Is 12 existing?\t: "+heap.checkDuplicate(12));
+
+        System.out.println("Heap elements\t: "+heap.displayHeap());
+    }
+}
